@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "example-summary",
+  "revision": 1,
+  "goal": "Merangkum dokumen yang disediakan dengan fakta terjaga",
+  "deliverable": "Ringkasan dengan rujukan bagian dokumen",
+  "status": "RUNNING",
+  "protected_constraints": [
+    {
+      "id": "no_invented_facts",
+      "value": "Jangan menambahkan fakta tanpa dukungan dokumen",
+      "source": "Instruksi contoh"
+    }
+  ],
+  "gates": [
+    {
+      "id": "coverage",
+      "property": "Pokok penting terwakili dan klaim didukung",
+      "verifier": "Bandingkan ringkasan dengan bagian sumber",
+      "required": true,
+      "status": "NOT_RUN",
+      "evidence": null
+    }
+  ],
+  "required_outputs": [
+    {"id": "summary", "status": "MISSING", "evidence": null}
+  ],
+  "dependencies": [],
+  "effects": [],
+  "route": {
+    "surface": "current-session",
+    "requested_model": null,
+    "observed_model": null,
+    "identity_source": "UNKNOWN_NOT_EXPOSED",
+    "effort": "medium",
+    "allowed_efforts": ["low", "medium", "high"],
+    "actuation": "RECOMMENDATION"
+  },
+  "budget": {"limits": {}, "exhausted": false, "evidence": null},
+  "adaptation_envelope": ["context selection", "effort within allowed_efforts"],
+  "state_ref": null,
+  "next_action": "Baca dokumen sumber"
+}
