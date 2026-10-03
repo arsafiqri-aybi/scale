@@ -1,6 +1,6 @@
 ---
 name: scale
-description: Design the execution architecture for AI tasks or projects: decomposition, dependencies, capability and effort ranges, tools, verification, handoff, and re-planning. Use when the execution path materially affects success, when work spans multiple dependent stages, or when the user asks for Scale. Skip simple tasks with an obvious route; Governor manages resources inside the contract.
+description: "Design the execution architecture for AI tasks or projects: decomposition, dependencies, capability and effort ranges, tools, verification, handoff, and re-planning. Use when the execution path materially affects success, when work spans multiple dependent stages, or when the user asks for Scale. Skip simple tasks with an obvious route; Governor manages resources inside the contract."
 ---
 
 # Scale
